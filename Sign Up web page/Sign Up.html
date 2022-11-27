@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="./icon/back/iconfont.css">
+        <link rel="stylesheet" href="./icon/help/iconfont.css">
+        <link rel="stylesheet" href="./icon/upload/iconfont.css">
+
+        <style>
+            .box{
+                height: 1060px;
+                width:600px;
+                background-image: url(./Picture/Background.png);
+                margin: 0 auto;
+                position: relative;
+            }
+            .title{
+                position: absolute;
+                width: 600px;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .word{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+            }
+            .upload{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top:18%;
+            }
+            .photo{
+                text-align: center;
+                color: white;
+            }
+            .form{
+                position: absolute;
+                left: 50%;
+                top: 40%;
+                transform: translateX(-50%);
+            }
+            input{
+                width:400px;
+                height: 88px;
+                border: none;
+                font-size: 25px;
+                background-color: initial;
+                color: white;
+            }
+            .submit{
+                width: 400px;
+                height: 88px;
+                background-color: white;
+                border-radius:44px;
+            }
+            .SignUp{
+                color: rgb(rgb(90, 144, 225), green, blue);
+            }
+            .SignIn{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                bottom: 10%;
+                font-size: 20px;
+                color:white;
+            }
+
+            .iconfont{
+                font-size: 50px;
+                color:white;
+            }
+            .icon-fanhui{
+                margin: 20px;
+                padding: 10px;
+            }
+            .icon-bangzhu{
+                margin: 20px;
+                padding: 10px;
+            }
+            .icon-jiahao{
+                font-size: 166px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="title">
+                <span class="iconfont icon-fanhui"></span>
+                <div class="word"><h1>Sign Up</h1></div>
+                <span class="iconfont icon-bangzhu"></span>
+            </div>
+            <div class="upload">
+                <span class="iconfont icon-jiahao"></span>
+                <div class="photo"><h3>PHOTO</h3></div>
+            </div>
+            <div class="form">
+                <form method="post" action="save.php">
+                <input type="text" name="First Name" value="First Name" /><br /><hr />
+                <input type="text" name="Last Name" value="Last Name" /><br /><hr />
+                <input type="text" name="Email Address" value="Email Address" /><br /><hr />
+                <input type="text" name="Password" value="Password" />
+                <div class="submit"><input type="submit" value="Sign Up" name="Sign Up" style="color:rgb(70, 47, 132);"/></div>
+                </form>
+            </div>
+            <div class="SignIn">Allready a member?<span style="color:turquoise">Sign In</span></div>
+        </div>
+    </body>
+</html>
